@@ -68,3 +68,7 @@ img{
     margin-right: 6rem;
     text-align: center;
 }
+
+@media screen and (min-width: 760px) {
+    
+}
