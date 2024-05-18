@@ -6,12 +6,25 @@
     <title>ShitScript</title>
     <link rel="icon" type="image/svg+xml" href="/img/Group 12.svg" />
     <link rel="stylesheet" href="editor.css">
+    <script src="https://kit.fontawesome.com/181ce1dd54.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <script src="editor.js"></script>
     <nav>
         <a href="/index.html"><img src="/img/Back Button.png" alt=""></a>
         <img src="/img/Group 12.png" alt="ShitScript logo" id="logo">
         <button>RUN</button>
     </nav>
+    <section id="main">
+        <div id="code-container">
+            <label><img src="/img/Group 12.svg" alt="">ShitScript</label>
+            <textarea name="editor" id="code-editor" autofocus>letshit five be 5;
+shit.screen(five)</textarea>
+        </div>
+        <div id="console-container">
+            <label><i class="fa-solid fa-terminal"></i>Console</label>
+            <textarea name="console" id="console-editor" readonly>$ 5</textarea>
+        </div>
+    </section>
 </body>
 </html>
