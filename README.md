@@ -1,5 +1,5 @@
 
-# ShitScript [![ShitScript](https://github.com/orkCoder/ShitScript/assets/144586372/9c7e9896-64e8-4b0e-8579-70d1bbcfd87a)
+# ShitScript 
 
 My own programming language fully avaliable on the web with most of the basic features a programming has to have to be functional, check it out!
 
