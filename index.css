@@ -1,11 +1,11 @@
 body {
     display: flex;
     justify-content: center;
-
+    align-items: center;
     margin: 0;
     padding: 0;
-
     font-family: monospace;
+    height: 100vh; 
 }
 
 #link {
@@ -13,18 +13,16 @@ body {
     flex-direction: row;
     flex: 1;
     font-size: 2rem;
-
     width: 32rem;
     height: 16rem;
     padding: 1rem;
     margin: 1rem;
     max-width: 48rem;
-
     border: 0.2rem black solid;
     border-radius: 2rem;
 }
 
-#inspace{
+#inspace {
     display: flex;
     justify-content: space-between;
     background-color: black;
@@ -32,7 +30,7 @@ body {
     border-radius: 1rem;
 }
 
-#line{
+#line {
     background-color: white;
     width: 8px;
 }
@@ -44,18 +42,19 @@ a {
 }
 
 a:hover {
-    color:#ffe866; 
-    text-decoration:none; 
-    cursor:pointer;  
+    color: #ffe866;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-img{
+img {
     height: 8rem;
+    width: auto;
 }
 
 #docs, #editor {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 #editor {
@@ -69,6 +68,38 @@ img{
     text-align: center;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (max-width: 732px) {
+    #link {
+        height: 90vh;
+    }
+    #inspace {
+        flex-direction: column;
+    }
+    #line {
+        height: 0.5rem;
+        width: 100%;
+    }
+    #docs img{
+        height: 9rem;
+        width: 9rem;
+    }
+    #docs, #editor {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
     
+    #editor {
+        margin-top: 4rem;
+        margin-left: 0rem;
+    }
+    
+    #docs {
+        margin-bottom: 4rem;
+        gap: 1rem;
+        text-align: center;
+    }
 }
