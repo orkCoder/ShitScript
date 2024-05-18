@@ -1,5 +1,5 @@
 
-# ShitScript ![Static Badge](https://img.shields.io/badge/:badgeContent)
+# ShitScript 
 
 My own programming language fully avaliable on the web with most of the basic features a programming has to have to be functional, check it out!
 
