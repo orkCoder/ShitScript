@@ -42,13 +42,31 @@ const TokenType = {
  * @returns {Token[]} An array of tokens.
  */
 
-export function tokenize(sourceCode){
+/**
+ * Creates a new token object.
+ * @param {string} value - The value of the token.
+ * @param {string} type - The type of the token.
+ * @returns {Object} A token object with the specified value and type.
+ */
+
+function token(value, type) {
+  return {
+    value: value,
+    type: type,
+  };
+}
+
+export function tokenize(sourceCode) {
   const tokens = [];
   const src = sourceCode.split("");
 
-  while(src.length > 0) {
-    if(src[0] == '(') {
-        
+  while (src.length > 0) {
+    if (src[0] == '(') {
+      tokens.push(token(src.shift(), TokenType.OpenParen));
+    } else if (src[0] == ')') {
+      tokens.push(token(src.shift(), TokenType.CloseParen));
+    } else if (src[0] == '+' || src[0] == '-') {
+        tokens.push(token(src.shift(), TokenType.BinaryOperators))
     }
   }
 
