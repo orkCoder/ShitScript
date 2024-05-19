@@ -51,6 +51,7 @@ nav button:hover {
 
 nav button:active {
     background-color: #e4d03b;
+    cursor: wait;
 }
 
 #main {
